@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "freetak.fullname" . }}
+  labels:
+    {{- include "freetak.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - name: datapackage
+      port: 8080
+      protocol: TCP
+    - name: clientport
+      port: 8087
+      protocol: TCP
+  selector:
+    {{- include "freetak.selectorLabels" . | nindent 4 }}

@@ -1,0 +1,12 @@
+apiVersion: v2
+name: freetak
+description: A Helm chart for FreeTakServer, a Situational Awareness Server compatible with TAK clients
+type: application
+version: 0.1.0
+appVersion: "2.2.1"
+keywords:
+- TAK
+- CivTAK
+- ATAK
+- FreeTak
+- FreeTakServer
