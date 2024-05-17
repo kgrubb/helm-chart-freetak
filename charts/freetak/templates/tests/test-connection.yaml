@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "freetak.fullname" . }}:{{ .Values.service.port }}']
+      args: ['{{ include "freetak.fullname" . }}:8087']
   restartPolicy: Never
