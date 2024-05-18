@@ -46,6 +46,12 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
+freetakserver:
+  args: ""
+  connectionMessage: ""
+  saveCotToDb: True
+  dataPackageHost: "0.0.0.0"
+
 resources:
   limits:
     cpu: 500m
