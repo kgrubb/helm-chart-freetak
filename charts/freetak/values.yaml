@@ -27,6 +27,9 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+service:
+  type: ClusterIP
+
 ingress:
   enabled: false
   className: ""
