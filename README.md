@@ -10,7 +10,7 @@ Helm chart for freetakserver.
 
 Add the repository:
 ```sh
-helm repo add freetak https://kgrubb.github.io/helm-charts/
+helm repo add freetak https://kgrubb.github.io/helm-chart-freetak/
 ```
 
 Install the package:

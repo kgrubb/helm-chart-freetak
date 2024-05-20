@@ -8,8 +8,14 @@ metadata:
     "helm.sh/hook": test
 spec:
   containers:
-    - name: wget
+    - name: nc
       image: busybox
-      command: ['wget']
-      args: ['{{ include "freetak.fullname" . }}:{{ .Values.service.port }}']
+      command: ['nc']
+      args: [
+        '-z',
+        '-w',
+        '5',
+        '{{ include "freetak.fullname" . }}',
+        '8087'
+        ]
   restartPolicy: Never
