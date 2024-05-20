@@ -3,6 +3,26 @@ entries:
   freetak:
   - apiVersion: v2
     appVersion: 2.2.1
+    created: "2024-05-20T04:26:49.543754212Z"
+    description: A Helm chart for FreeTakServer, a Situational Awareness Server compatible
+      with TAK clients
+    digest: 9afd4b48d562f9c40a40b0751e6c4533bae5a6def62c34039e9d8adcdf10680e
+    keywords:
+    - TAK
+    - CivTAK
+    - ATAK
+    - FreeTak
+    - FreeTakServer
+    maintainers:
+    - email: keligrubb324@gmail.com
+      name: kgrubb
+    name: freetak
+    type: application
+    urls:
+    - https://github.com/kgrubb/helm-chart-freetak/releases/download/freetak-0.1.1/freetak-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 2.2.1
     created: "2024-05-17T03:24:56.968093333Z"
     description: A Helm chart for FreeTakServer, a Situational Awareness Server compatible
       with TAK clients
@@ -18,4 +38,4 @@ entries:
     urls:
     - https://github.com/kgrubb/helm-chart-freetak/releases/download/freetak-0.1.0/freetak-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-17T03:24:56.968105426Z"
+generated: "2024-05-20T04:26:49.543767156Z"
