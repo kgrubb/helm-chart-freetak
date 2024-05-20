@@ -13,7 +13,8 @@ spec:
       command: ['nc']
       args: [
         '-z',
-        '-w=5',
+        '-w',
+        '5',
         '{{ include "freetak.fullname" . }}',
         '8087'
         ]
