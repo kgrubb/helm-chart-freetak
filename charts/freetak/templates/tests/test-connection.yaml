@@ -16,6 +16,6 @@ spec:
         '-w',
         '5',
         '{{ include "freetak.fullname" . }}',
-        '8087'
+        '5000'
         ]
   restartPolicy: Never

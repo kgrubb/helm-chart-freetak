@@ -13,5 +13,10 @@ spec:
     - name: clientport
       port: 8087
       protocol: TCP
+    {{- if .Values.ui.enabled }}
+    - name: webui
+      port: 5000
+      protocol: TCP
+    {{- end }}
   selector:
     {{- include "freetak.selectorLabels" . | nindent 4 }}
